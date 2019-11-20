@@ -1,0 +1,83 @@
+Create sequence entrepreneurGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+
+Create sequence teamGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+
+Create sequence sectorGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+
+Create sequence investorGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence profitedEntrepreneurGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence interestGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence requestGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence followGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence messageGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence recommendationGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence srGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+Create sequence tpeGenerator
+start with 4444
+increment by 1
+nocycle
+nocache;
+
+
+---------------------------
+
+Bytes for encrypting and decrypting using MD5
+
+final String iv = "lsouqteimvnxbzfd";
+final String secretKey = "Entrepreneur has a decent family";
+	
