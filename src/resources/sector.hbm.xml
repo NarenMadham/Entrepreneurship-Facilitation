@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="beans.Sector" table="sector" schema="system">
+<id name="sec_id">
+	<generator class="beans.SectorPKGenerator"></generator>
+</id>
+<property name="idea_sector"/>
+<property name="sector_description"/>
+<property name="scale"/>
+</class>
+</hibernate-mapping>

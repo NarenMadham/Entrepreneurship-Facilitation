@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="beans.Team_PE_chat" table="team_pe_chat" schema="system">
+<id name="team_pe_chat_id">
+<generator class="sequence">
+<param name="sequence">tpeGenerator</param>
+</generator>
+</id>
+<property name="message_id"/>
+<property name="message_body"/>
+</class>
+</hibernate-mapping>

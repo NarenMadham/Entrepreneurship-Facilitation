@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="beans.Message" table="message" schema="system">
+<id name="message_id">
+<generator class="sequence">
+<param name="sequence">messageGenerator</param>
+</generator>
+</id>
+<property name="sender"/>
+<property name="receiver"/>
+<property name="message_body"/>
+<property name="time"/>
+</class>
+</hibernate-mapping>

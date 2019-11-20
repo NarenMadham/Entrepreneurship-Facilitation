@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="beans.ProfitedEntrepreneur" table="profited_entrepreneur" schema="system">
+<id name="p_ent_id">
+	<generator class="beans.ProfitedEntrepreneurPKGenerator"></generator>
+</id>
+<property name="first_name"/>
+<property name="middle_name"/>
+<property name="last_name"/>
+<property name="email"/>
+<property name="phone"/>
+<property name="dob"/>
+<property name="contribution"/>
+<property name="qualifications"/>
+<property name="achievements"/>
+</class>
+</hibernate-mapping>

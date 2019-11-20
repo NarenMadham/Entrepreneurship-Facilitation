@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="beans.Follow" table="follow" schema="system">
+<id name="follow_id">
+<generator class="sequence">
+<param name="sequence">followGenerator</param>
+</generator>
+</id>
+<property name="team_id"/>
+<property name="inv_id"/>
+</class>
+</hibernate-mapping>

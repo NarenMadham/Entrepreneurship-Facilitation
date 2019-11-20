@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name = "beans.Team" table = "team" schema = "system">
+<id name = "team_id">
+	<generator class="beans.TeamPKGenerator">
+		<param name="sequence">teamGenerator</param>
+	</generator>
+</id>
+<property name="team_name"/>
+<property name="username"/>
+<property name="password"/>
+<property name="idea_description"/>
+<property name="idea_sector"/>
+<property name="phone"/>
+<set name="sector" cascade="all" table="sector">
+<key column="idea_sector"/>
+<one-to-many class="beans.Sector"/>
+</set>
+</class>
+</hibernate-mapping>

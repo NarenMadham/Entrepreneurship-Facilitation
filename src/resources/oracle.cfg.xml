@@ -1,0 +1,33 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+<property name="connection.username">system</property>
+<property name="connection.password">naren</property>
+
+<property name="connection.dialect">org.hibernate.dialect.OracleDialect</property>
+
+<property name="hbm2ddl.auto">update</property>
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+
+<mapping resource="resources/follow.hbm.xml"/>
+<mapping resource="resources/interest.hbm.xml"/>
+<mapping resource="resources/investor.hbm.xml"/>
+<mapping resource="resources/message.hbm.xml"/>
+<mapping resource="resources/profited_entrepreneur.hbm.xml"/>
+<mapping resource="resources/recommendation.hbm.xml"/>
+<mapping resource="resources/sector.hbm.xml"/>
+<mapping resource="resources/suggestionRequest.hbm.xml"/>
+<mapping resource="resources/team_pe_chat.hbm.xml"/>
+<mapping resource="resources/team.hbm.xml"/>
+<mapping class="beans.TeamPKGenerator" />
+<mapping class="beans.InvestorPKGenerator" />
+<mapping class="beans.SectorPKGenerator" />
+<mapping class="beans.ProfitedEntrepreneurPKGenerator" />
+
+</session-factory>
+</hibernate-configuration>

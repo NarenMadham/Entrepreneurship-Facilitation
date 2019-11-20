@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="beans.Investor" table="investor" schema="system">
+<id name="inv_id">
+	<generator class="beans.InvestorPKGenerator"></generator>
+</id>
+<property name="first_name"/>
+<property name="middle_name"/>
+<property name="last_name"/>
+<property name="password"/>
+<property name="email"/>
+<property name="dob"/>
+<property name="interested_sectors"/>
+<property name="invested_startups"/>
+</class>
+</hibernate-mapping>

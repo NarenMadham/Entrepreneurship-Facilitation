@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="beans.Interest" table="interest" schema="system">
+<id name="interest_id">
+<generator class="sequence">
+<param name="sequence">interestGenerator</param>
+</generator>
+</id>
+<property name="inv_id"/>
+<property name="team_id"/>
+</class>
+</hibernate-mapping>
